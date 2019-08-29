@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="artworks">
+  {{ content }}
+  <div class="artworks--listing">
+    {% for post in site.posts %}
+      {% if post.categories contains 'artworks' %}
+        <div class="post">
+            <a href="{{ post.url }}">
+              {% if post.featured-image %}
+                {% include featured-image.html image=post.featured-image alt=post.featured-image-alt %}
+              {% endif %}
+              <h3 class="title">{{ post.title }}</h3>
+            </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

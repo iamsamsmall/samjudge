@@ -1,0 +1,57 @@
+// Colours
+
+$black: #1a1a1a;
+$white: #FFF;
+
+//Typography
+
+@font-face {
+  font-family: 'Maria';
+  src: url('../assets/Maria.eot'); /* IE9 Compat Modes */
+  src: url('../assets/Maria.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/Maria.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+@mixin s1 /* Default */ {
+  font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.4em;
+  letter-spacing: -.025em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin s2 /* Body */ {
+  font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 1em 0;
+  letter-spacing: .02em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin s3 /* Heading 1 */ {
+  font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2.2em;
+  letter-spacing: -.05em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin s4 /* Home heading */ {
+  font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2em;
+  @media (min-width: 36em) {
+    font-size: 3em;
+  }
+  @media (min-width: 52em) {
+    font-size: 4em;
+  }
+  letter-spacing: -.05em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,15 @@
+---
+layout: default
+page: Blog
+---
+
+{{ content }}
+
+<ul class="posts">
+{% for post in site.posts %}
+		<li>
+			<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    	<p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+		</li>
+{% endfor %}
+</ul>
