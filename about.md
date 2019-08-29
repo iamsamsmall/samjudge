@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-# About Sam Judge
+# About Sam&nbsp;Judge
 
 ![Headshot of Sam Judge](/assets/images/headshot.png)
 

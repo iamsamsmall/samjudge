@@ -14,8 +14,14 @@ $white: #FFF;
 
 @mixin s1 /* Default */ {
   font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.4em;
-  letter-spacing: -.025em;
+  font-size: 1.1em;
+  @media (min-width: 36em) {
+    font-size: 1.2em;
+  }
+  @media (min-width: 52em) {
+    font-size: 1.4em;
+  }
+  letter-spacing: .015em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,9 +30,9 @@ $white: #FFF;
 @mixin s2 /* Body */ {
   font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.1em;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 1em 0;
-  letter-spacing: .02em;
+  letter-spacing: .0175em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +41,7 @@ $white: #FFF;
 @mixin s3 /* Heading 1 */ {
   font-family: "Maria", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2.2em;
-  letter-spacing: -.05em;
+  letter-spacing: -0.015em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

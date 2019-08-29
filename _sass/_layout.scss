@@ -16,9 +16,12 @@ body {
 // Header
 
 header {
-  padding: 2em;
+  padding: 2em 2em 1em;
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: 36em) {
+    padding-bottom: 2em;
+  }
 }
 
 .logo {
@@ -27,6 +30,7 @@ header {
   text-decoration: none;
   flex-grow: 1.5;
   padding: 0;
+  margin: 0 1em 0.5em 0;
 }
 
 nav {
@@ -64,16 +68,24 @@ h1 {
 // Home
 
 .home {
-  padding:2em;
+  padding: 1em 2em 2em;
+  @media (min-width: 36em) {
+    padding-top: 2em;
+  }
   h1 {
     @include s4;
+    line-height: 1.1;
+    max-width: 900px;
   }
   img {
     display: block;
-    margin: 4em auto 2em;
+    margin: 2em auto 2em;
     width: 100%;
     max-width: 400px;
     z-index: -100;
+    @media (min-width: 36em) {
+      margin-top: 4em;
+    }
   }
 }
 
@@ -84,7 +96,7 @@ article {
   max-width: 800px;
   h1 {
     @include s3;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.75em;
   }
   p {
     @include s2;
@@ -98,7 +110,7 @@ article {
     display: block;
     border: 0;
     border-bottom: 2px solid $black;
-    margin: 2em 0;
+    margin: 2.5em 0;
   }
   img {
       margin: 2em auto;
@@ -179,5 +191,21 @@ article {
       display: block;
       width: 100%;
       max-width: 800px;
+  }
+}
+
+// Footer
+
+.footer {
+  padding: 2em 2em 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  @media (min-width: 36em) {
+    padding-bottom: 2em;
+  }
+  a {
+    @include s1;
+    text-decoration: none;
+    color: $black;
   }
 }
