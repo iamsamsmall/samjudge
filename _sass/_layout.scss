@@ -68,23 +68,27 @@ h1 {
 // Home
 
 .home {
-  padding: 1em 2em 2em;
-  @media (min-width: 36em) {
-    padding-top: 2em;
+  padding: 0em 2em 2em;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 52em) {
+    display: flex;
+    flex-direction: row-reverse;
   }
   h1 {
+    display: block;
     @include s4;
     line-height: 1.1;
     max-width: 900px;
+    margin-left: 1.5%;
   }
   img {
     display: block;
-    margin: 2em auto 2em;
+    margin: 1em auto 0;
     width: 100%;
     max-width: 400px;
-    z-index: -100;
     @media (min-width: 36em) {
-      margin-top: 4em;
+      padding: 2em;
     }
   }
 }
